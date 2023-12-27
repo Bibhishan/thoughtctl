@@ -10,7 +10,7 @@ import Foundation
 class ListViewModel {
     
     private var listModel: [ListModel] = [ListModel(title: "Mahabaleshwar", date: "1/12/23 7:23 AM", postImage: ["1","3","5"]),
-                                          ListModel(title: "Latur", date: "23-11/23 5:23 PM", postImage: ["2","4","6"]),
+                                          ListModel(title: "Latur", date: "23/11/23 5:23 PM", postImage: ["2","4","6"]),
                                           ListModel(title: "Lonavala", date: "10/9/23 10:23 AM", postImage: ["5","2","3","5"]),
                                           ListModel(title: "Panchganiv", date: "26/23/23 10:23 PM", postImage: ["7"]),
                                           ListModel(title: "Alibaug", date: "2/9/23 10:23 AM", postImage: ["4","3","2"]),
