@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		587AEE636E9679E90711403D /* Pods_Thoughtctl_Task.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6F74D0A0EAD1F62FAD5D9E6 /* Pods_Thoughtctl_Task.framework */; };
 		E9B3C0442B3B1AFE00D9CF70 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B3C0432B3B1AFE00D9CF70 /* AppDelegate.swift */; };
 		E9B3C0462B3B1AFE00D9CF70 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B3C0452B3B1AFE00D9CF70 /* SceneDelegate.swift */; };
 		E9B3C0482B3B1AFE00D9CF70 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B3C0472B3B1AFE00D9CF70 /* HomeController.swift */; };
@@ -25,6 +26,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5B496B24BEB0A8ABC821380E /* Pods-Thoughtctl_Task.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Thoughtctl_Task.debug.xcconfig"; path = "Target Support Files/Pods-Thoughtctl_Task/Pods-Thoughtctl_Task.debug.xcconfig"; sourceTree = "<group>"; };
+		BE0F1F5836AAC3FB648DD72A /* Pods-Thoughtctl_Task.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Thoughtctl_Task.release.xcconfig"; path = "Target Support Files/Pods-Thoughtctl_Task/Pods-Thoughtctl_Task.release.xcconfig"; sourceTree = "<group>"; };
 		E9B3C0402B3B1AFE00D9CF70 /* Thoughtctl_Task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Thoughtctl_Task.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9B3C0432B3B1AFE00D9CF70 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E9B3C0452B3B1AFE00D9CF70 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -42,6 +45,7 @@
 		E9F3F0652B3C6EE3003626E1 /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
 		E9F3F0672B3C70C8003626E1 /* PostImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostImageCell.swift; sourceTree = "<group>"; };
 		E9F3F0682B3C70C8003626E1 /* PostImageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostImageCell.xib; sourceTree = "<group>"; };
+		F6F74D0A0EAD1F62FAD5D9E6 /* Pods_Thoughtctl_Task.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Thoughtctl_Task.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,17 +53,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				587AEE636E9679E90711403D /* Pods_Thoughtctl_Task.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		393AE519BA08116CAFE652D5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F6F74D0A0EAD1F62FAD5D9E6 /* Pods_Thoughtctl_Task.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		961929F711842BC303E76A01 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5B496B24BEB0A8ABC821380E /* Pods-Thoughtctl_Task.debug.xcconfig */,
+				BE0F1F5836AAC3FB648DD72A /* Pods-Thoughtctl_Task.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		E9B3C0372B3B1AFE00D9CF70 = {
 			isa = PBXGroup;
 			children = (
 				E9B3C0422B3B1AFE00D9CF70 /* Thoughtctl_Task */,
 				E9B3C0412B3B1AFE00D9CF70 /* Products */,
+				961929F711842BC303E76A01 /* Pods */,
+				393AE519BA08116CAFE652D5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -157,9 +181,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E9B3C0542B3B1B0100D9CF70 /* Build configuration list for PBXNativeTarget "Thoughtctl_Task" */;
 			buildPhases = (
+				E560DBF58B9F56E3FCC31A33 /* [CP] Check Pods Manifest.lock */,
 				E9B3C03C2B3B1AFE00D9CF70 /* Sources */,
 				E9B3C03D2B3B1AFE00D9CF70 /* Frameworks */,
 				E9B3C03E2B3B1AFE00D9CF70 /* Resources */,
+				77E1EB2A69A21414C753551A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -186,7 +212,7 @@
 				};
 			};
 			buildConfigurationList = E9B3C03B2B3B1AFE00D9CF70 /* Build configuration list for PBXProject "Thoughtctl_Task" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 12.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -218,6 +244,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		77E1EB2A69A21414C753551A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Thoughtctl_Task/Pods-Thoughtctl_Task-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Thoughtctl_Task/Pods-Thoughtctl_Task-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Thoughtctl_Task/Pods-Thoughtctl_Task-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E560DBF58B9F56E3FCC31A33 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Thoughtctl_Task-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E9B3C03C2B3B1AFE00D9CF70 /* Sources */ = {
@@ -295,7 +363,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -358,7 +426,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -379,6 +447,7 @@
 		};
 		E9B3C0552B3B1B0100D9CF70 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B496B24BEB0A8ABC821380E /* Pods-Thoughtctl_Task.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -391,7 +460,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 13;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -407,6 +476,7 @@
 		};
 		E9B3C0562B3B1B0100D9CF70 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE0F1F5836AAC3FB648DD72A /* Pods-Thoughtctl_Task.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -419,7 +489,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 13;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

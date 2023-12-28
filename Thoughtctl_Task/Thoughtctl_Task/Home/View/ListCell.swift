@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class ListCell: UICollectionViewCell {
 
@@ -46,7 +47,7 @@ extension ListCell: UICollectionViewDelegate, UICollectionViewDataSource, UIColl
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: postImageCellID, for: indexPath) as? PostImageCell {
-            cell.postImage.image = UIImage(named: postImage[indexPath.row])
+            cell.postImage.kf.setImage(with: URL(string: postImage[indexPath.row]))
             return cell
         }
         return UICollectionViewCell()
