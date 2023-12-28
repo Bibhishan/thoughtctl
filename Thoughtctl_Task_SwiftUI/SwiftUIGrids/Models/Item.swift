@@ -2,7 +2,7 @@
 //  Item.swift
 //  SwiftUIGrids
 //
-//  Created by Alfian Losari on 26/07/20.
+//  Created by Bibhishan Biradar on 28/12/23.
 //
 
 import Foundation
@@ -13,20 +13,6 @@ struct Item: Identifiable {
     let subtitle: String
     let imageName: String
 }
-
-//extension Item {
-//    
-//    static var stubs: [Item] {
-//        (0...31).map {
-//            Item(
-//                title: "Title: \($0)",
-//                subtitle: "Subtitle: \($0)",
-//                imageName: "image-\($0)"
-//            )
-//        }
-//    }
-//}
-
 
 extension Item {
     static var stubs: [Item] {
